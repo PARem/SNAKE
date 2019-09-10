@@ -1,0 +1,52 @@
+body, html{
+    margin: 0;
+}
+.board{
+    margin: 10px 20px 5px 20px;
+
+    border-left: 1px solid black;
+    border-top:  1px solid black;
+    overflow: hidden;
+    display: inline-block;
+}
+.board > div{
+    height: 20px;
+    width:  20px;
+    box-sizing: border-box;
+    border-right:  1px solid black;
+    border-bottom: 1px solid black;
+    float:left;
+}
+.board > div.row-start{
+    clear: both;
+}
+.board > div[data-game = fruit]{
+    background: red;
+}
+.board > div[data-game = snake]{
+    background: #ff0;
+}
+.board > div[data-game = 'wall']{
+    background: dimgray;
+}
+.start-game{
+    margin-left: 20px;
+}
+/*
+.start-game > input[type='button']{
+    float: left;
+    margin-right: 70px;
+}*/
+.head{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+
+}
+#level-game{
+    margin-right: 70px;
+}
+div.head > p{
+    display: inline;
+    margin-bottom: 0;
+}
